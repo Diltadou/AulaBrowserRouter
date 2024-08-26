@@ -57,35 +57,30 @@ export default function Home() {
             <img 
               src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/header.jpg?t=1724260178" 
               alt="Slide 1" 
-              style={{ width: '100%', height: 'auto' }} 
             />
           </div>
           <div>
             <img 
               src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1720472998" 
               alt="Slide 2" 
-              style={{ width: '100%', height: 'auto' }} 
             />
           </div>
           <div>
             <img 
               src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1721682743" 
               alt="Slide 3" 
-              style={{ width: '100%', height: 'auto' }} 
             />
           </div>
           <div>
             <img 
               src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1666290860" 
               alt="Slide 4" 
-              style={{ width: '100%', height: 'auto' }} 
             />
           </div>
           <div>
             <img 
               src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header_brazilian.jpg?t=1724260543" 
-              alt="Slide 5" 
-              style={{ width: '100%', height: 'auto' }} 
+              alt="Slide 5"  
             />
           </div>
         </Carousel>

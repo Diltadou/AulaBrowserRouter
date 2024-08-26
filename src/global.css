@@ -42,21 +42,13 @@
     margin: 10px 0 0;
   }
   
-  .produto-desconto {
+  .produto-desconto, .produto-preco-com-desconto {
     font-size: 14px;
     color: #f00;
     margin: 10px 0 0;
     font-weight: bold;
   }
   
-  .produto-preco-com-desconto {
-    font-size: 16px;
-    color: #0a0;
-    margin: 10px 0 0;
-    font-weight: bold;
-  }
-  
-
   .header .logo1 img, 
   .header .logo2 img,
   .header .logo3 img,
@@ -65,7 +57,6 @@
     height: auto;
   }
   
-
   body {
     background: linear-gradient(45deg, rgb(0, 255, 0), rgb(175, 75, 75), rgb(0, 0, 255));
     background-size: 400% 400%;
@@ -86,6 +77,7 @@
       background-position: 0% 50%;
     }
   }
+  
   .footer {
     background-color: #333;
     color: #fff;
@@ -114,4 +106,19 @@
     padding-top: 10px;
   }
   
+  .carousel .slide img {
+    object-fit: cover;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .carousel .carousel-slider {
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel .slide img, .carousel .carousel-slider {
+      max-height: 200px;
+    }
+  }
   
