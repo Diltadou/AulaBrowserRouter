@@ -12,7 +12,7 @@ export default function ListarProdutos({ produtos }) {
           <div className="produto-info">
             <h2 className="produto-nome">{produto.nome}</h2>
             <p className="produto-preco">
-              Preço: ${produto.preco.toFixed(2)}
+              Preço: ${produto.preco}
             </p>
             {produto.desconto && (
               <>

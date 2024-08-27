@@ -5,7 +5,6 @@ import ListarProdutos from '../components/ListaProdutos';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-
 export default function Home() {
   const [produtos, setProdutos] = useState([
     {
@@ -53,36 +52,17 @@ export default function Home() {
           showThumbs={false}
           dynamicHeight
         >
-          <div>
-            <img 
-              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/header.jpg?t=1724260178" 
-              alt="Slide 1" 
-            />
-          </div>
-          <div>
-            <img 
-              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1720472998" 
-              alt="Slide 2" 
-            />
-          </div>
-          <div>
-            <img 
-              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1721682743" 
-              alt="Slide 3" 
-            />
-          </div>
-          <div>
-            <img 
-              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1666290860" 
-              alt="Slide 4" 
-            />
-          </div>
-          <div>
-            <img 
-              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header_brazilian.jpg?t=1724260543" 
-              alt="Slide 5"  
-            />
-          </div>
+          {[
+            "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/header.jpg?t=1724260178",
+            "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1720472998",
+            "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1721682743",
+            "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1666290860",
+            "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header_brazilian.jpg?t=1724260543"
+          ].map((src, index) => (
+            <div key={index}>
+              <img src={src} alt={`Slide ${index + 1}`} />
+            </div>
+          ))}
         </Carousel>
 
         <h1>Produtos em Destaque</h1>

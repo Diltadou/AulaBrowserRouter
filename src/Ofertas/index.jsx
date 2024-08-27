@@ -63,15 +63,15 @@ export default function Ofertas() {
     },
     {
       id: 9,
-      nome: 'Oferta 1',
+      nome: 'Crime Scene Cleaner',
       preco: 49.99,
       desconto: 12,
       imagem: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1040200/header.jpg?t=1724053807',
     },
     {
       id: 10,
-      nome: 'Oferta 2',
-      preco: 2.99,
+      nome: 'solar empire',
+      preco: 20.99,
       imagem: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1575940/header.jpg?t=1724421020',
     },
   ]);
